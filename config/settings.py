@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-import google.generativeai as genai
+
+# import google.generativeai as genai
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -19,14 +20,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Import Gemini API Key.
 API_KEY = os.environ.get('API_KEY')
-if not API_KEY:
-    raise ValueError('Gemini API Keyが設定されていません。')
+# if not API_KEY:
+#     raise ValueError('Gemini API Keyが設定されていません。')
 
 # Output one hiragana character.
-genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
-response = model.generate_content("ひらがな一文字を出力して。")
-print(response.text)
+# genai.configure(api_key=API_KEY)
+# model = genai.GenerativeModel("gemini-1.5-flash")
+# response = model.generate_content("ひらがな一文字を出力して。")
+# print(response.text)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
