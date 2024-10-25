@@ -1,6 +1,6 @@
 # Django Gemini API Test
 Gemini API Keyを取得し、プロンプトを事前に指定することで
-runserver後のページにGeminiからの回答が表示される。
+runserver後のページにGeminiからの回答が表示される。テスト目的のリポジトリ。
 
 プロンプトを変更したい場合、geminiTest/views.pyのgenerate_content関数の引数を変更する。
 
